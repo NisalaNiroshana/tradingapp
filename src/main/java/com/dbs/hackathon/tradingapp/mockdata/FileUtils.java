@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 public class FileUtils {
 
     public static void main(String[] args) throws IOException {
-        MappingIterator<TradeData> itr = parseCSVFile("/Users/nisala/my/tradingapp/src/main/resources/data-stock/5min" +
+        MappingIterator<TradeData> itr = parseCSVFile("src/main/resources/data-stock/5min" +
                 "/700.hk.txt");
         System.out.println(itr);
     }
