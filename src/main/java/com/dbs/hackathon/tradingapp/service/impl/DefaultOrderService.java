@@ -24,7 +24,7 @@ public class DefaultOrderService implements OrderService {
     @Override
     public OrderResponse execute(Order order) throws IOException {
 
-        MappingIterator<TradeData> tradeDataI = FileUtils.parseCSVFile("src/main/resources/data-stock/5min/" + order.getTickerId() + ".txt");
+        MappingIterator<TradeData> tradeDataI = FileUtils.parseCSVFile("/data-stock/5min/" + order.getTickerId() + ".txt");
         List<TradeData> tradeData =  tradeDataI.readAll();
         Date today = new Date();
 
