@@ -56,8 +56,18 @@ public class DefaultOrderService implements OrderService {
 
         if(orderValue <= avgTWAP) {
             // undervalue -- good for buy
+            if(order.getSide() == 0) {
+                // status 0
+            } else {
+                // status 1
+            }
         } else {
             // over value -- good for sell
+            if(order.getSide() == 0) {
+                // status 1
+            } else {
+                // status 0
+            }
         }
 
         return null;
